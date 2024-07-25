@@ -1,0 +1,83 @@
+:root {
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Soft-Red-hsl: 0, 93%, 68%;
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+  --bg-gradient-red: linear-gradient(
+    to right,
+    hsl(358, 79%, 84%),
+    hsl(1, 74%, 76%)
+  );
+
+  --Main-font: "Josefin Sans", sans-serif;
+  --font-thin: 300;
+  --font-normal: 400;
+  --font-semibold: 600;
+
+  --text-base: 0.875rem; /* 14 - 16 */
+  --text-heading-1: 2.5rem;
+
+  --leading-none: 1;
+  --leading-heading-1: 2.625rem;
+  --leading-paragraph: 1.375rem;
+
+  --tracking-paragraph: 0.004em;
+  --tracking-heading-1: 0.27em;
+
+  --rounded-full: 9999px;
+}
+/* @media screen and (min-width: 40em) {
+    :root {
+        --text-base: 1rem;
+        --text-heading-1: 4rem;
+        --leading-paragraph: 1.75rem;
+        --leading-heading-1: 4.4375rem;
+    }
+} */
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  overflow-wrap: break-word;
+  line-height: 1rem;
+  background: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%) 0%,
+    hsl(354, 100%, 96%) 100%
+  );
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+.container {
+  font-family: var(--Main-font);
+  font-size: 1rem;
+  color: var(--Desaturated-Red);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 90rem;
+  min-height: 100vh;
+}
+
+.logo_mobile{
+        padding: 1.9rem 2rem 2rem 2rem;
+}
+
+.logo{
+    display: block;
+    max-width: 100%;
+}
+
+.--mobile{
+    height: 1.3rem;
+}
